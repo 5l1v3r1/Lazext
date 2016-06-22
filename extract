@@ -1,0 +1,192 @@
+#!/bin/bash
+####################################################################################################################################################################
+#							
+#							LAZEXT	
+#					         LAZY EXTRACTOR WILL BE UPDATE IN LALIN  
+#Description:
+#This script automatically Extract file and easy to use , Love CLI :*
+#
+#Homepage:
+#https://github.com/screetsec/
+#
+#Author:
+#
+#Edo -m- ( screetsec@gmail.com )
+#####################################################################################################################################################################
+
+
+
+#This colour 
+cyan='\e[0;36m'
+green='\e[0;34m'
+okegreen='\033[92m'
+lightgreen='\e[1;32m'
+white='\e[1;37m'
+red='\e[1;31m'
+yellow='\e[1;33m'
+
+
+
+#For input yes or no
+again='y'
+while  [ $again == 'y' ] || [ $again == 'Y' ];
+do
+clear
+
+#Banner Lazext Huehuehueheu 
+clear
+echo
+echo -e $white"   A_A"
+echo -e $white"  (-.-)	  "
+echo -e $white"   |-| $okegreen	       __     __    ____  ____  _  _  ____ "
+echo -e $white"  /   \ $okegreen      (  )   /__\  (_   )( ___)( \/ )(_  _)"
+echo -e $white" |     | $okegreen __   )(_  /(__)\  / /_  )__)  )  (   )(  "
+echo -e $white" |  || | $okegreen|  \(____)(__)(__)(____)(____)(_/\_) (__) "
+echo -e $white" \ _||_/_$okegreen/        	  "
+echo -e $white"                                      LAZY EXTRACTOR ";
+echo -e $okegreen"======================================================="
+echo -e $white"Example Usage :"
+echo
+echo -e $white	"$okegreen	1) $white Extract File Name $okegreen .tar.bz2"
+echo -e $white	"$okegreen 	2) $white Extract File Name $okegreen .tar.gz"
+echo -e $white	"$okegreen 	3) $white Extract File Name $okegreen .tar.xz"
+echo -e $white	"$okegreen 	4) $white Extract File Name $okegreen .lzma"
+echo -e $white	"$okegreen 	5) $white Extract File Name $okegreen .bz2"
+echo -e $white	"$okegreen 	6) $white Extract File Name $okegreen .rar"
+echo -e $white	"$okegreen 	7) $white Extract File Name $okegreen .gz"
+echo -e $white	"$okegreen 	8) $white Extract File Name $okegreen .tar"
+echo -e $white	"$okegreen 	9) $white Extract File Name $okegreen .tbz2"
+echo -e $white	"$okegreen 	10)$white Extract File Name $okegreen .tgz"
+echo -e $white	"$okegreen 	11)$white Extract File Name $okegreen .zip"
+echo -e $white	"$okegreen 	12)$white Extract File Name $okegreen .Z"
+echo -e $white	"$okegreen 	13)$white Extract File Name $okegreen .7z"
+echo -e $white	"$okegreen 	14)$white Extract File Name $okegreen .xz"
+echo -e $white	"$okegreen 	15)$white Extract File Name $okegreen .exe"
+echo -e $white	"$okegreen 	16)$white Exit"
+echo "			     AUTHOR: SCREETSEC [EDO -M-] "
+echo -e $okegreen"========================================================"
+echo""
+echo -n -e $white"root@Lazext:$okegreen ";  #insert your choice
+read choose
+if test $choose == '1'
+ then
+ echo -n -e "insert your local file $white( <path/file_name> ) :$okegreen ";
+ read screetsec
+ cd "Output"
+ tar xvjf $screetsec
+
+elif test $choose == '2'
+ then
+ echo -n -e "insert your local file $white( <path/file_name> ) :$okegreen ";
+ read screetsec
+ cd "Output"
+ tar xvzf $screetsec
+
+elif test $choose == '3'
+ then
+ echo -n -e "insert your local file $white( <path/file_name> ) :$okegreen ";
+ read screetsec
+ cd "Output"
+ tar xvJf $screetsec	
+
+elif test $choose == '4'
+ then
+ echo -n -e "insert your local file $white( <path/file_name> ) :$okegreen ";
+ read screetsec
+ cd "Output"
+ unlzma $screetsec	
+
+elif test $choose == '5'
+ then
+ echo -n -e "insert your local file $white( <path/file_name> ) :$okegreen ";
+ read screetsec
+ cd "Output"
+ bunzip2 $screetsec	
+
+elif test $choose == '6'
+ then
+ echo -n -e "insert your local file $white( <path/file_name> ) :$okegreen ";
+ read screetsec
+ cd "Output"
+ unrar x -ad $screetsec
+	
+elif test $choose == '7'
+ then
+ echo -n -e "insert your local file $white( <path/file_name> ) :$okegreen ";
+ read screetsec
+ cd "Output"
+ gunzip $screetsec
+	
+elif test $choose == '8'
+ then
+ echo -n -e "insert your local file $white( <path/file_name> ) :$okegreen ";
+ read screetsec
+ cd "Output"
+ tar xvf $screetsec
+
+elif test $choose == '9'
+ then
+ echo -n -e "insert your local file $white( <path/file_name> ) :$okegreen ";
+ read screetsec
+ cd "Output"
+ tar xvjf $screetsec
+	
+elif test $choose == '10'
+ then
+ echo -n -e "insert your local file $white( <path/file_name> ) :$okegreen ";
+ read screetsec
+ cd "Output"
+ tar xvzf $screetsec
+ 
+elif test $choose == '11'
+ then
+ echo -n -e "insert your local file $white( <path/file_name> ) :$okegreen ";
+ read screetsec
+ cd "Output"
+ unzip $screetsec
+
+elif test $choose == '12'
+ then
+ echo -n -e "insert your local file $white( <path/file_name> ) :$okegreen ";
+ read screetsec
+ cd "Output"
+ uncompress $screetsec
+
+elif test $choose == '13'
+ then
+ echo -n -e "insert your local file $white( <path/file_name> ) :$okegreen ";
+ read screetsec
+ cd "Output"
+ 7z x $screetsec
+
+elif test $choose == '14'
+ then
+ echo -n -e "insert your local file $white( <path/file_name> ) :$okegreen ";
+ read screetsec
+ cd "Output"
+ unxz $screetsec
+
+elif test $choose == '15'
+ then
+ echo -n -e "insert your local file $white( <path/file_name> ) :$okegreen ";
+ read bebe
+ cd "Output"
+ cabextract $bebe
+ 
+elif test $choose == '16'
+ then
+    zenity --info --text "Thanks For Use Lazext : Screetsec [Edo -m- ]" 
+     clear
+      exit
+fi
+
+echo
+echo -e -n "Back to Menu? (y/n) :";
+read again;
+
+    while  [ $again != 'y' ] && [ $again != 'Y' ] && [ $again != 'n' ] && [ $again != 'N' ];
+    do
+       echo -n "Back to menu (y/n) :";
+       read again;
+    done
+done
