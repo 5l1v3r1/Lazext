@@ -3,7 +3,9 @@ Lazy Extractor with easy command , If you dont remember the command you just run
 
 
 ## :octocat: Screenshots ###
-How to start a script?
+<img src="https://cloud.githubusercontent.com/assets/17976841/16275293/9f03a1f4-38d3-11e6-8fad-3ae284f495fe.png" width="90%"></img> 
+
+##How to start a script?
 ```
 $ sudo chmod +x Lazext
 ```
