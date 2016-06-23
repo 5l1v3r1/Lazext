@@ -62,7 +62,8 @@ echo -e $white	"$okegreen 	12)$white Extract File Name $okegreen .Z"
 echo -e $white	"$okegreen 	13)$white Extract File Name $okegreen .7z"
 echo -e $white	"$okegreen 	14)$white Extract File Name $okegreen .xz"
 echo -e $white	"$okegreen 	15)$white Extract File Name $okegreen .exe"
-echo -e $white	"$okegreen 	16)$white Exit"
+echo -e $white  "$okegreen       16)$white Must Visit $okegreen ;)  "
+echo -e $white	"$okegreen 	17)$white Exit"
 echo "			     AUTHOR: SCREETSEC [EDO -M-] "
 echo -e $okegreen"========================================================"
 echo""
@@ -174,6 +175,12 @@ elif test $choose == '15'
  cabextract $bebe
  
 elif test $choose == '16'
+ then
+    firefox https://www.linuxsec.org
+    firefox https://www.dutalinux.org
+    firefox http://www.indonesianbacktrack.or.id/
+
+elif test $choose == '17'
  then
     zenity --info --text "Thanks For Use Lazext : Screetsec [Edo -m- ]" 
      clear
