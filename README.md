@@ -22,6 +22,15 @@ $ sudo ./Lazext
 * Easy to Use just input your number
 * File Extract in ouput folder
 
+## :octocat: Credits
+
+- Thanks to allah and Screetsec [ Edo -maland- ] <Me> 
+- Dracos Linux from Scratch Indonesia ( Awesome Penetration os ), you can see in http://dracos-linux.org/ 
+- Offensive Security for the awesome OS ( http://www.offensive-security.com/ )
+- http://www.kali.org/"   
+- Jack Wilder admin in http://www.linuxsec.org
+- And another open sources tool in github
+
 
 ## Disclaimer
 
